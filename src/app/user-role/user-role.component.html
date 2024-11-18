@@ -1,0 +1,7 @@
+<h3>Set User Role</h3>
+<select [(ngModel)]="role">
+    @for (r of userRoles; track $index) {
+    <option [value]="r">{{ r }}</option>
+    }
+</select>
+<p>Current Role: {{ role }}</p>

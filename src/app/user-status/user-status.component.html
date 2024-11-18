@@ -1,0 +1,7 @@
+<h3>Set User Status</h3>
+<select [(ngModel)]="status">
+    @for (s of statusValues; track $index) {
+    <option [value]="s">{{ s }}</option>
+    }
+</select>
+<p>Current Status: {{ status }}</p>
